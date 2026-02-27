@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-section button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-section button:hover {
+  background: #5563c1;
+}
+
+.current-weather {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.current-weather img {
+  width: 100px;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.forecast-card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+}
