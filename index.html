@@ -14,22 +14,26 @@
       <h1>🌤 SkyFetch Weather Dashboard</h1>
     </header>
 
-    <div class="search-section">
-      <input 
-        type="text" 
-        id="search-input" 
-        placeholder="Enter city name..."
-      />
-      <button id="search-btn">Search</button>
-    </div>
+   <div class="search-section">
+  <input 
+    type="text" 
+    id="search-input" 
+    placeholder="Enter city name..."
+  />
+  <button id="search-btn">Search</button>
+</div>
 
-    <div id="weather-container">
-      <!-- Weather data will appear here -->
-       <p>Search for a city to see weather details 🌤</p>
+<!-- ✅ ADD THIS BLOCK HERE -->
+<div id="recent-searches-section" class="recent-searches-section">
+  <h3>Recent Searches</h3>
+  <div id="recent-searches-container"></div>
+  <button id="clear-history-btn">Clear History</button>
+</div>
+<!-- ✅ END ADD -->
 
-    </div>
-
-  </div>
+<div id="weather-container">
+  <p>Search for a city to see weather details 🌤</p>
+</div> 
 
   <script src="app.js"></script>
 
